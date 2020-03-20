@@ -6,7 +6,7 @@ class navbar extends Component{
     let menuMarkup = this.props.link.map((link, index)=> {
       return(
       <li className="nav-item" key={index}>
-          <a className="nav-link js-scroll-trigger active" href="{link.links}">{link.label}</a>
+          <a className={"nav-link js-scroll-trigger "+ (link.active ? 'active' : '')} href="{link.links}">{link.label}</a>
       </li>
       )
     })

@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import './App.css';
+
 
 import Nav from './Components/Nav';
 import HomeSlider from './Components/HomeSlider';
+import About from './Components/About';
 
 class App extends Component{
   render(){
@@ -11,7 +12,7 @@ class App extends Component{
       <div className="App">
         <Nav />
         <HomeSlider />
-
+        <About />
       </div>
     );
   }
